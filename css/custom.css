@@ -4243,7 +4243,7 @@ header.main-header .header-sticky.active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -4252,7 +4252,7 @@ header.main-header .header-sticky.active {
 .team-card {
   position: relative;
   border-radius: 10px;
-  height: 470px;
+  height: 520px;
   overflow: hidden;
 }
 
@@ -4326,7 +4326,7 @@ header.main-header .header-sticky.active {
   }
 
   .team-card {
-    height: 420px;
+    height: 500px;
   }
 }
 
@@ -4362,7 +4362,7 @@ header.main-header .header-sticky.active {
   }
 
   .team-card {
-    height: 400px;
+    height: 500px;
     max-width: 400px;
     margin: 0 auto;
   }
