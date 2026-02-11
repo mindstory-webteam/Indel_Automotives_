@@ -4235,7 +4235,7 @@ header.main-header .header-sticky.active {
 
    /* Team Section */
 .ourteam-section {
-  padding: 100px 0;
+  padding: 0 0 100px 0;
 }
 
 /* Team Grid Layout */
