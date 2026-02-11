@@ -7605,11 +7605,11 @@ header.main-header .header-sticky.active {
 		margin-top: 10px;
 	}
 }
-@media only screen and (min-width: 400px) and (max-width: 767px){		
+/* @media only screen and (min-width: 400px) and (max-width: 767px){		
 	.team-item {
 		height: auto;
 	}
-}
+} */
 /************************************/
 /***   32. Home - Version 2 css   ***/
 /************************************/
