@@ -8,13 +8,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
-    <meta name="description" content="" />
+    <meta name="description" content="Explore the Indel Automotives Showcase Gallery featuring photos of premium vehicles, highlights from our automotive collection, and visual inspiration from our latest showroom and events." />
     <meta name="keywords" content="" />
     <meta name="author" content="Awaiken" />
     <!-- Page Title -->
-    <title>Indel Automotives</title>
+    <title>Showcase Gallery – Featured Vehicles & Photo Gallery</title>
+    <link rel="canonical" href="https://indelauto.com/showcase">
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/new-logo.webp" />
+        <link rel="shortcut icon" type="image/x-icon" href="images/fav-Icon-2.png" />
+
+        <!-- Google reCapthca-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Google Fonts Css-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,50 +72,55 @@
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                    <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li> -->
+                    <a class="nav-link" href="/about-us">About Us</a>
+                    <!-- <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li> -->
                   </li>
 
                   <li class="nav-item submenu">
-                    <a class="nav-link" href="./">Our Dealerships </a>
+                    <a class="nav-link" href="#">Our Dealerships </a>
                     <ul>
                       <li class="nav-item">
-                        <a class="nav-link" href="volvo.html">Kerala Volvo</a>
+                        <a class="nav-link" href="/kerala-volvo">Kerala Volvo</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="toyota.html"
+                        <a class="nav-link" href="/kairali-toyota"
                           >Kairali Toyota</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="kairali.html">Kairali Ford</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="honda.html">Indel Honda</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="suzuki.html">Indel Suzuki</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="yamaha.html">Indel Yamaha</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="mobility.html"
-                          >Indel Mobility</a
+                        <a class="nav-link" href="/kairali-ford"
+                          >Kairali Ford</a
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="river.html">Ride River</a>
+                        <a class="nav-link" href="/indel-honda">Indel Honda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="indel-suzuki">Indel Suzuki</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/indel-yamaha">Indel Yamaha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/indel-mobility"
+                          >Indel Mobility - Ashok Leyland</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/indel-wheels">Indel Wheels - River</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/motory">Motory</a>
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="life-at-indel.html"
+                    <a class="nav-link" href="/life-at-indel"
                       >Life At Indel</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="image-gallery.html">Gallery</a>
+                    <a class="nav-link" href="/showcase">Showcase</a>
                   </li>
                   <!-- <li class="nav-item"><a class="nav-link" href="service-booking.html">Service Booking</a></li> -->
                   <!-- <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
@@ -133,7 +142,7 @@
 
               <!-- Header Btn Start -->
               <div class="header-btn">
-                <a href="contact.html" class="btn-default btn-highlighted"
+                <a href="/contact-us" class="btn-default btn-highlighted"
                   >Contact Us</a
                 >
               </div>
@@ -155,9 +164,7 @@
           <div class="col-lg-12">
             <!-- Page Header Box Start -->
             <div class="page-header-box">
-              <h1 class="text-anime-style-3" >
-                Our Gallery
-              </h1>
+              <h1 class="text-anime-style-3">Our Gallery</h1>
               <nav class="wow fadeInUp">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="./">home</a></li>
@@ -177,153 +184,362 @@
     <!-- Photo Gallery Start -->
     <div class="page-gallery">
       <div class="container">
-        <!-- gallery section start -->
-        <div class="row gallery-items page-gallery-box">
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp">
-              <a href="images/g1.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g1.webp" alt="" />
-                </figure>
-              </a>
+        <!-- TABS -->
+        <div class="gallery-tabs">
+          <button class="tab-btn active" data-tab="all">All</button>
+          <button class="tab-btn" data-tab="volvo">Kerala Volvo</button>
+          <button class="tab-btn" data-tab="toyota">Kairali Toyota</button>
+          <button class="tab-btn" data-tab="ford">Kairali Ford</button>
+          <button class="tab-btn" data-tab="honda">Indel Honda</button>
+          <button class="tab-btn" data-tab="suzuki">Indel Suzuki</button>
+          <button class="tab-btn" data-tab="yamaha">Indel Yamaha</button>
+          <button class="tab-btn" data-tab="mobility">Indel Mobiltiy</button>
+          <button class="tab-btn" data-tab="river">Indel Wheels</button>
+          <button class="tab-btn" data-tab="motory">Motory</button>
+          <button class="tab-btn" data-tab="other">Other</button>
+        </div>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-wrapper">
+          <!-- ================= ALL ================= -->
+
+          <div class="tab-pane active" id="all">
+            <div class="row gallery-items page-gallery-box">
+              <!-- Volvo -->
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/volvo-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/volvo-1.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/volv02.webp">
+                    <figure class="image-anime">
+                      <img src="images/volv02.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/volvo-3.webp">
+                    <figure class="image-anime">
+                      <img src="images/volvo-3.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Toyota -->
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/toyota-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/toyota-1.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Honda -->
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/honda-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/honda-1.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/honda-2.webp">
+                    <figure class="image-anime">
+                      <img src="images/honda-2.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/honda-6.webp">
+                    <figure class="image-anime">
+                      <img src="images/honda-6.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/suzuki-7.webp">
+                    <figure class="image-anime">
+                      <img src="images/suzuki-7.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/yamaha-3.webp">
+                    <figure class="image-anime">
+                      <img src="images/yamaha-3.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/yamaha-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/yamaha-1.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/yamaha-2.webp">
+                    <figure class="image-anime">
+                      <img src="images/yamaha-2.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="0.2s">
-              <a href="images/g2.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g2.webp" alt="" />
-                </figure>
-              </a>
+          <!-- ================= VOLVO ================= -->
+
+          <div class="tab-pane" id="volvo">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/volvo-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/volvo-1.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/volv02.webp">
+                    <figure class="image-anime">
+                      <img src="images/volv02.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/volvo-3.webp">
+                    <figure class="image-anime">
+                      <img src="images/volvo-3.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="0.4s">
-              <a href="images/g3.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g3.webp" alt="" />
-                </figure>
-              </a>
+          <!-- ================= TOYOTA ================= -->
+
+          <div class="tab-pane" id="toyota">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/toyota-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/toyota-1.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="0.6s">
-              <a href="images/g4.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g4.webp" alt="" />
-                </figure>
-              </a>
+          <!-- ================= FORD ================= -->
+
+          <div class="tab-pane" id="ford">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/toyota-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/kairali-ford.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="0.8s">
-              <a href="images/g5.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g5.webp" alt="" />
-                </figure>
-              </a>
+          <!-- ================= HONDA ================= -->
+
+          <div class="tab-pane" id="honda">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/honda-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/honda-1.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/honda-2.webp">
+                    <figure class="image-anime">
+                      <img src="images/honda-2.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/honda-6.webp">
+                    <figure class="image-anime">
+                      <img src="images/honda-6.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="1s">
-              <a href="images/g6.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g6.webp" alt="" />
-                </figure>
-              </a>
+          <!-- ================= SUZUKI ================= -->
+
+          <div class="tab-pane" id="suzuki">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/suzuki-7.webp">
+                    <figure class="image-anime">
+                      <img src="images/suzuki-7.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/suzuki-7.webp">
+                    <figure class="image-anime">
+                      <img src="images/indel-suzuki.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="1.2s">
-              <a href="images/g21.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g21.webp" alt="" />
-                </figure>
-              </a>
+          <!-- ================= YAMAHA ================= -->
+
+          <div class="tab-pane" id="yamaha">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/yamaha-1.webp">
+                    <figure class="image-anime">
+                      <img src="images/yamaha-1.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/yamah.webp">
+                    <figure class="image-anime">
+                      <img src="images/indel-yamaha.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/yamaha-2.webp">
+                    <figure class="image-anime">
+                      <img src="images/yamaha-2.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/yamaha-3.webp">
+                    <figure class="image-anime">
+                      <img src="images/yamaha-3.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="1.2s">
-              <a href="images/g23.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g22.webp" alt="" />
-                </figure>
-              </a>
-            </div>
-            <!-- Image Gallery end -->
-          </div>
+          <!-- ================= MOBILITY ================= -->
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="1.4s">
-              <a href="images/g24.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g23.webp" alt="" />
-                </figure>
-              </a>
+          <div class="tab-pane" id="mobility">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/motory-page.webp">
+                    <figure class="image-anime">
+                      <img src="images/motory-page.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
+          <!-- ================= RIVER ================= -->
 
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="1.6s">
-              <a href="images/g25.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g24.webp" alt="" />
-                </figure>
-              </a>
+          <div class="tab-pane" id="river">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/river-page.webp">
+                    <figure class="image-anime">
+                      <img src="images/river-page.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="1.6s">
-              <a href="images/g26.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g25.webp" alt="" />
-                </figure>
-              </a>
+          <!-- ================= MOTORY ================= -->
+
+          <div class="tab-pane" id="motory">
+            <div class="row gallery-items page-gallery-box">
+              <div class="col-lg-4 col-6">
+                <div class="photo-gallery wow fadeInUp" data-cursor-text="View">
+                  <a href="images/motory-page.webp">
+                    <figure class="image-anime">
+                      <img src="images/motory-page.webp" alt="" />
+                    </figure>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- Image Gallery end -->
           </div>
-          <div class="col-lg-4 col-6">
-            <!-- Image Gallery start -->
-            <div class="photo-gallery wow fadeInUp" data-wow-delay="1.6s">
-              <a href="images/gallery-9.webp" data-cursor-text="View">
-                <figure class="image-anime">
-                  <img src="images/g26.webp" alt="" />
-                </figure>
-              </a>
-            </div>
-            <!-- Image Gallery end -->
+          <!-- ================= OTHER ================= -->
+
+          <div class="tab-pane" id="other">
+            <div class="row gallery-items page-gallery-box"></div>
           </div>
         </div>
-        <!-- gallery section end -->
       </div>
     </div>
+
     <!-- Photo Gallery End -->
 
     <!-- Main Footer Start -->
@@ -340,18 +556,25 @@
               <!-- About Footer Title End -->
 
               <!-- Footer Social Link Start -->
-              <div class="footer-social-links">
+          <div class="footer-social-links">
                 <h3>Follow Us On Social:</h3>
                 <ul>
                   <li>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a
+                      href="https://youtube.com/@indel_automotives_official?si=EWmVJ2rfGyUDTeaD"
+                        target="_blank"
+                    >
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
                   </li>
-                  
+
                   <li>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a
+                      href="https://www.instagram.com/indel_automotives_official"
+                        target="_blank"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -372,7 +595,10 @@
               <!-- About Footer Content Start -->
               <div class="about-footer-content">
                 <p>
-                Indel Automotive operates multiple authorized dealerships across premium brands, delivering exceptional vehicle sales, genuine parts, and professional after-sales service throughout Kerala.
+                  Indel Automotive operates multiple authorized dealerships
+                  across premium brands, delivering exceptional vehicle sales,
+                  genuine parts, and professional after-sales service throughout
+                  Kerala.
                 </p>
               </div>
               <!-- About Footer Content End -->
@@ -398,9 +624,9 @@
                 <h3>Quick Links</h3>
                 <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="life-at-indel.html">Life At Indel</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="/about-us">About Us</a></li>
+                  <li><a href="/life-at-indel">Life At Indel</a></li>
+                  <li><a href="/contact-us">Contact Us</a></li>
                 </ul>
               </div>
               <!-- Footer Links End -->
@@ -413,7 +639,7 @@
                   tips, service updates, and exclusive offers—delivered straight
                   to your inbox.
                 </p>
-                <form id="newslettersForm" action="#" method="POST">
+                <form id="newslettersForm" method="POST">
                   <div class="form-group">
                     <input
                       type="email"
@@ -423,10 +649,14 @@
                       placeholder="Enter Your Email Address"
                       required
                     />
-                    <button type="submit" class="newsletter-btn">
+
+                   <button type="submit" class="newsletter-btn">
                       <img src="images/arrow-primary.svg" alt="" />
                     </button>
                   </div>
+
+                  <!-- SUCCESS MESSAGE -->
+                  <div id="newsletterMsg" style="margin-top: 10px"></div>
                 </form>
               </div>
               <!-- Footer Links End -->
@@ -437,7 +667,7 @@
           <div class="col-lg-12">
             <!-- Footer Copyright Text Start -->
             <div class="footer-copyright-text">
-              <p>Copyright © 2025 All Rights Reserved.</p>
+              <p>Copyright © 2026 All Rights Reserved.</p>
             </div>
             <!-- Footer Copyright Text End -->
           </div>
@@ -445,7 +675,31 @@
       </div>
     </footer>
     <!-- Main Footer End -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-btn");
+        const panes = document.querySelectorAll(".tab-pane");
 
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // remove active
+            tabs.forEach((btn) => btn.classList.remove("active"));
+            panes.forEach((pane) => pane.classList.remove("active"));
+
+            // add active
+            tab.classList.add("active");
+            document.getElementById(tab.dataset.tab).classList.add("active");
+
+            // refresh WOW animation
+            if (typeof WOW !== "undefined") {
+              new WOW().init();
+            }
+          });
+        });
+      });
+    </script>
+
+    <script src="js/custom.js"></script>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->

@@ -40,6 +40,24 @@
 			return false;
 		});
 	}
+	
+	/* Home banner Slider JS */
+	if ($('.home-banner-slider').length) {
+		const testimonial_slider = new Swiper('.home-banner-slider .swiper', {
+			slidesPerView : 1,
+			speed: 1000,
+			spaceBetween: 30,
+			dot: true,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+			},
+		    pagination: {
+                el: ".swiper-pagination",
+            },
+		});
+	}
+
 
 	/* testimonial Slider JS */
 	if ($('.testimonial-slider').length) {
@@ -385,9 +403,9 @@
 
 	function submitMSG(valid, msg){
 		if(valid){
-			var msgClasses = "h4 text-success";
+			var msgClasses = "h5 text-success";
 		} else {
-			var msgClasses = "h4 text-danger";
+			var msgClasses = "h5 text-danger";
 		}
 		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 	}
@@ -425,9 +443,9 @@
 
 	function appointmentsubmitMSG(valid, msg){
 		if(valid){
-			var msgClasses = "h3 text-success";
+			var msgClasses = "h5 text-success";
 		} else {
-			var msgClasses = "h3 text-danger";
+			var msgClasses = "h5 text-danger";
 		}
 		$("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 	}
