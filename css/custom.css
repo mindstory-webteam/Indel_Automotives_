@@ -5189,8 +5189,8 @@ header.main-header .header-sticky.active {
 
 .team-contact-item .icon-box {
 	position: relative;
-	height: 60px;
-	width: 60px;
+	height: 40px;
+	width: 40px;
 	background-color: var(--primary-color);
 	border-radius: 12px;
 	display: flex;
@@ -5223,7 +5223,7 @@ header.main-header .header-sticky.active {
 .team-contact-item .icon-box img {
 	position: relative;
 	width: 100%;
-	max-width: 30px;
+	max-width: 24px;
 	z-index: 1;
 	transition: all 0.4s ease-in-out;
 	filter: brightness(0) invert(1);
