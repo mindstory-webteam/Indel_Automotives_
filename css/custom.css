@@ -13612,3 +13612,14 @@ header.main-header .header-sticky.active {
 	color: #fff;
 	transform: translateY(-3px);
 }
+.np-update-cs{
+	display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-top: 1px solid var(--divider-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.team-contact-item-content a p{
+	color: #000;
+}
