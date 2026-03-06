@@ -13618,7 +13618,7 @@ header.main-header .header-sticky.active {
   gap: 30px;
   /* border-top: 1px solid var(--divider-color); */
   /* padding-top: 40px; */
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .team-contact-item-content a p{
 	color: #000;
