@@ -1689,6 +1689,7 @@ header.main-header .header-sticky.active {
 	object-fit: cover;
 	border-radius: 10px;
 	transition: all 0.6s ease-in-out;
+	/* object-position: bottom !important; */ 
 }
 
 .our-value-item .course-item-image img {
@@ -3533,7 +3534,7 @@ header.main-header .header-sticky.active {
 /* Tablet */
 @media (max-width: 991px) {
 	.collage-5 {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr; 
 		grid-template-rows: auto;
 		height: auto;
 	}
@@ -3592,7 +3593,31 @@ header.main-header .header-sticky.active {
 .life-at-indel-star-section {
 	padding-bottom: 0 !important;
 }
+.collage-8 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: repeat(3, 240px);
+  gap: 16px;
+}
 
+.collage-8 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 991px) {
+  .collage-8 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .collage-8 .gallery-item { grid-column: auto; grid-row: auto; }
+}
+
+@media (max-width: 575px) {
+  .collage-8 { grid-template-columns: 1fr; }
+} 
 /*.about-us-start-section {*/
 /*	padding-top: 0;*/
 /*}*/
@@ -13653,6 +13678,7 @@ header.main-header .header-sticky.active {
     cursor: default;
     transition: border-color .18s, background .18s, transform .15s;
     box-shadow: 0 1px 4px rgba(10,43,110,.06);
+	cursor: pointer;
   }
 
   .indel-locs__tag:hover {
@@ -13713,4 +13739,30 @@ header.main-header .header-sticky.active {
     stroke-linejoin: round;
     flex-shrink: 0;
   }
-  
+.social-float {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+.soacial-icon {
+  height: 45px;
+  width: 45px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 4px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, .15); */
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+  cursor: pointer;
+}
+.soacial-icon-img {
+  height: auto;
+  width: auto;
+  transition: transform .25s ease;
+}
+.facebook-icon {
+  border-radius: 8px;
+  padding: 3px;
+}
