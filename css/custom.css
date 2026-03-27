@@ -13766,3 +13766,15 @@ header.main-header .header-sticky.active {
   border-radius: 8px;
   padding: 3px;
 }
+.custom-call-2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.custom-call-ne-ss{
+    flex-direction: column;
+    gap: 5px !important;
+}
