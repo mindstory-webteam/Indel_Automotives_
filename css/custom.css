@@ -853,7 +853,7 @@ header.main-header .header-sticky.active {
 
 .hero.hero-3 {
 	position: relative;
-	background-image: url('../images/indel.png');
+	background-image: url('../images/indel-new-2.png');
 	padding: 240px 0 120px;
 	margin-top: 20px;
 	overflow: hidden;
@@ -868,7 +868,7 @@ header.main-header .header-sticky.active {
 }
 @media screen and (max-width: 650px) {
   .hero.hero-3 {
-	background-image: url('../images/indel-mobile.png');
+	background-image: url('../images/indel-new-1.png');
 	margin: 0;
 }
 }
