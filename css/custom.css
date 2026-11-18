@@ -850,6 +850,28 @@ header.main-header .header-sticky.active {
 	justify-content: center;
 }
 
+
+.hero.hero-3 {
+	position: relative;
+	background-image: url('../images/indel.png');
+	padding: 240px 0 120px;
+	margin-top: 20px;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-position: center !important;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media screen and (max-width: 650px) {
+  .hero.hero-3 {
+	background-image: url('../images/indel-mobile.png');
+	margin: 0;
+}
+}
 .hero::before {
 	content: '';
 	position: absolute;
