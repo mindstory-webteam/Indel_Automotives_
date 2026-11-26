@@ -13644,20 +13644,46 @@ header.main-header .header-sticky.active {
 	row-gap: 20px;
 }
 
+/* FLOW SLIDE GALLERY TABS WITH VISIBLE SCROLL BAR */
 .gallery-tabs {
 	display: flex;
-	gap: 10px;
+	gap: 12px;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 	scroll-behavior: smooth;
 	padding: 10px 4px 14px 4px;
-	margin-bottom: 25px;
-	scrollbar-width: none;
-	-ms-overflow-style: none;
+	margin-bottom: 30px;
+	scrollbar-width: thin;
+	scrollbar-color: #17479E #e2e8f0;
+	cursor: grab;
+}
+
+.gallery-tabs.is-dragging {
+	cursor: grabbing;
+	user-select: none;
+	scroll-behavior: auto;
 }
 
 .gallery-tabs::-webkit-scrollbar {
-	display: none;
+	height: 6px;
+	display: block;
+}
+
+.gallery-tabs::-webkit-scrollbar-track {
+	background: #e2e8f0;
+	border-radius: 10px;
+}
+
+.gallery-tabs::-webkit-scrollbar-thumb {
+	background: #17479E;
+	border-radius: 10px;
+	transition: background 0.3s;
+}
+
+.gallery-tabs::-webkit-scrollbar-thumb:hover {
+	background: #0f306d;
 }
 
 .tab-btn {
@@ -13678,6 +13704,7 @@ header.main-header .header-sticky.active {
 .tab-btn.active {
 	background: #17479E;
 	color: #fff;
+	box-shadow: 0 4px 12px rgba(23, 71, 158, 0.25);
 }
 
 .tab-btn:hover {
@@ -13696,12 +13723,10 @@ header.main-header .header-sticky.active {
 	display: block;
 }
 
-/* MOBILE RESPONSIVE TABS */
-@media (max-width: 767px) {
+/* TABLET & MOBILE RESPONSIVE SIZES */
+@media (max-width: 991px) {
 	.gallery-tabs {
-		gap: 8px;
-		margin-bottom: 20px;
-		padding: 8px 2px 12px 2px;
+		margin-bottom: 25px;
 	}
 
 	.tab-btn {
@@ -13711,6 +13736,11 @@ header.main-header .header-sticky.active {
 }
 
 @media (max-width: 480px) {
+	.gallery-tabs {
+		gap: 8px;
+		padding-bottom: 12px;
+	}
+
 	.tab-btn {
 		padding: 7px 13px;
 		font-size: 13px;
